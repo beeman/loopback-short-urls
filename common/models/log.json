@@ -1,0 +1,31 @@
+{
+  "name": "Log",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true
+    },
+    "urlId": {
+      "type": "string",
+      "required": true
+    },
+    "userAgent": {
+      "type": "string"
+    },
+    "ip": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Url",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "string",
+      "required": true,
+      "id": true
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "aliases": {
+      "type": [ "string" ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "created": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "modified": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "hits": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
