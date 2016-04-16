@@ -1,5 +1,5 @@
 {
-  "name": "loopback-domainr",
+  "name": "loopback-short-urls",
   "version": "1.0.0",
   "main": "server/server.js",
   "author": "Bram Borggreve",
@@ -27,5 +27,5 @@
     "type": "",
     "url": ""
   },
-  "description": "loopback-domainr"
+  "description": "loopback-short-urls"
 }
