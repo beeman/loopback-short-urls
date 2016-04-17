@@ -8,15 +8,17 @@
   "properties": {
     "id": {
       "type": "string",
-      "required": true,
-      "id": true
+      "id": true,
+      "required": true
     },
     "url": {
       "type": "string",
       "required": true
     },
     "aliases": {
-      "type": [ "string" ]
+      "type": [
+        "string"
+      ]
     },
     "title": {
       "type": "string"
@@ -35,7 +37,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "logs": {
+      "type": "hasMany",
+      "model": "Log",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
