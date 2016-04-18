@@ -6,6 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "INITDB=1 ACCESS_TOKEN=devToken nodemon server/server.js --watch server --watch common --ext js,json",
+    "docker-build": "docker build -t beeman/loopback-short-urls .",
+    "docker-run": "docker run -p 3000:3000 beeman/loopback-short-urls",
     "start": "node .",
     "pretest": "jshint ."
   },
