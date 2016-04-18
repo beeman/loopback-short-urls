@@ -5,7 +5,7 @@
   "author": "Bram Borggreve",
   "license": "MIT",
   "scripts": {
-    "dev": "INITDB=1 nodemon server/server.js --watch server --watch common --ext js,json",
+    "dev": "INITDB=1 ACCESS_TOKEN=devToken nodemon server/server.js --watch server --watch common --ext js,json",
     "start": "node .",
     "pretest": "jshint ."
   },
